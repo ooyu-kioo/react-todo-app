@@ -7,6 +7,6 @@ interface Props {
 export const Input: React.FC<Props> = ({ label }) => {
 
   return (
-    <input name={label} />
+    <input type='text' name={label} />
   )
 } 

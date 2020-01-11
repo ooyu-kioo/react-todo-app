@@ -1,14 +1,9 @@
 import { Reducer } from 'redux'
-import {
-  FilterType,
-  FilterActions,
-  show_all,
-  SET_VISIBILITY_FILTER
-} from '../actions'
+import { FilterType, FilterActions, show_all, SET_VISIBILITY_FILTER } from '../actions'
 
 
 // state
-export interface State {
+export interface FilterState {
   visibility: FilterType
 }
 
@@ -18,17 +13,25 @@ export const initialState = {
 }
 
 // reducer
-const FilterReducer = (
-  state: State = initialState,
+const FilterReducer: Reducer<FilterState, FilterActions> = (
+  state: FilterState = initialState,
   action: FilterActions
-) => {
+): FilterState => {
+
+  console.log('filterReducer')
+
   switch (action.type) {
     case SET_VISIBILITY_FILTER:
+
+      console.log(action.payload.filter)
+
       return {
         visibility: action.payload.filter
       }
     default:
-      return state;
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      const _: never = action.type
+      return state
   }
 }
 

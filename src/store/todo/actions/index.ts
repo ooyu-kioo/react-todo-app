@@ -2,13 +2,12 @@
 todoのaction
 */
 
-// 定数的な
 export const ADDTODO = 'ADDTODO'
 export const TOGGLETODO = 'TOGGLETODO' // 完了・未完了の反転
 
 // action
 export const addTodo = (text: string) => ({
-  type: ADDTODO as typeof ADDTODO,
+  type: ADDTODO as typeof ADDTODO, // 
   payload: { text }
 })
 

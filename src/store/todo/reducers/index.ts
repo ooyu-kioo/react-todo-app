@@ -34,10 +34,12 @@ const TodoReducer: Reducer<TodosState, TodoActions> = (
       return {
         // viewから渡されたpayloadと一致するtodoのdoneだけ変える
         todos: state.todos.map((todo) => {
-          return todo.id == action.payload.id ? { ...todo, done: !todo.done } : todo
+          return todo.id === action.payload.id ? { ...todo, done: !todo.done } : todo
         })
       }
     default:
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      const _: never = action // never型 = 何も入らない型 => case文の漏れチェック
       return state
   }
 }

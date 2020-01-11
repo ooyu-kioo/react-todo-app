@@ -1,31 +1,9 @@
-redux, hooks, material-uiで作る〜〜〜
+個人的なreact, redux, typescript でのbest-practice-templateみたいな
 
-#### 機能
-- todoの追加、フィルター
-- 押したら波線ーとか？
+### todo
 
-#### dir構成
-- src
-  - components
-    - atoms => material使うんでなし(最初は作る)
-      - button
-      - input
-      - list
-      - とか配置する感じ？
-    - molecules
-      - addTodo：todoの追加 => input, button
-      - todoList：todoの一覧表示 => listでバーって
-      - filter：all, active, doneの表示切り替え => 
-    - organisms
-      - Todo：moleculesをまとめる
-  - store
-    - todo
-
-
-- todoの追加 inputの値をbuttonでstateにセットする
-  - input と buttonは別のcomponent
-  - addTodoはbuttonにおく
-  - 
+- 非同期(thunk,saga)
+- material-ui
 
 
 ***

@@ -1,12 +1,9 @@
-// 定数的な
 export const SHOW_ALL = 'SHOW_ALL'
 export const SHOW_COMPLETED = 'SHOW_COMPLETED'
 export const SHOW_ACTIVE = 'SHOW_ACTIVE'
-
 export const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER'
 
-
-// TODO：filterに設定する引数の定義？
+// FilterTypeの型の定義
 type showAll = {
   type: 'SHOW_ALL'
 }
@@ -29,11 +26,9 @@ export type FilterType
 export const show_all = (): FilterType => ({
   type: SHOW_ALL as typeof SHOW_ALL
 })
-
 export const show_completed = (): FilterType => ({
   type: SHOW_COMPLETED as typeof SHOW_COMPLETED
 })
-
 export const show_active = (): FilterType => ({
   type: SHOW_ACTIVE as typeof SHOW_ACTIVE
 })
@@ -47,9 +42,5 @@ export const setVisibilityFilter = (filter: FilterType) => ({
   payload: { filter }
 })
 
-// まとめます
-export type FilterActions =
-  | ReturnType<typeof show_all>
-  | ReturnType<typeof show_completed>
-  | ReturnType<typeof show_active>
-  | ReturnType<typeof setVisibilityFilter>
+// まとめます(reducerで使用するactionの型を作る)
+export type FilterActions = ReturnType<typeof setVisibilityFilter>
