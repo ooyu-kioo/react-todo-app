@@ -1,4 +1,4 @@
-import { State } from '../../../store'
+import { State } from '../../..'
 import { SHOW_ALL, SHOW_ACTIVE, SHOW_COMPLETED } from '../../filter/actions'
 
 /*

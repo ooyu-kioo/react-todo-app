@@ -6,6 +6,33 @@
 - material-ui
 
 
+### commitのバージョン
+
+- 一通りのtodo
+  - 66073f9
+- 非同期処理
+  - redux-thunk
+  - redux-saga
+
+
+### 作業log
+
+- 非同期処理
+  - githubのapiを使用
+  - 同じviewにいったん表示
+
+- github_api
+  - components
+    - organisms - github-api
+    - molecules - member-list => dirふやす
+    - atoms - button, memberItem => dir増やす(common, topic)
+
+- thunk, sagaに取り掛かる前にdirの整理、必要なcomponentの整理をコミットしとく
+  - action, reducer周りは後から整理
+
+
+
+
 ***
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

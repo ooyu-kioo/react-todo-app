@@ -1,6 +1,6 @@
 import { combineReducers, createStore } from 'redux'
-import Todo from './todo' // reducerのimport(default export)
-import Filter from './filter'
+import Todo from './Todo/todos' // reducerのimport(default export)
+import Filter from './Todo/filter'
 
 /*
 reducerまとめたりstore生成したり

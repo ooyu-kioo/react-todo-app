@@ -2,12 +2,12 @@
 filterの表示切り替え
 */
 
-import React from 'react'
-import { useDispatch } from 'react-redux'
+import React from 'react';
+import { useDispatch } from 'react-redux';
 
-import { Button } from '../../atoms/button'
+import { Button } from '../../../atoms/Common/button';
 
-import { show_all, show_completed, show_active, setVisibilityFilter } from '../../../store/filter'
+import { show_all, show_completed, show_active, setVisibilityFilter } from '../../../../store/Todo/filter'
 
 export const Filter: React.FC = () => {
 

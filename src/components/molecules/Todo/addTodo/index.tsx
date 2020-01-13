@@ -5,10 +5,10 @@ todoの追加のinput, addのbuttonの領域
 import React from 'react';
 import { useDispatch } from 'react-redux';
 
-import { Button } from '../../atoms/button';
+import { Button } from '../../../atoms/Common/button';
 // import { Input } from '../../atoms/input'
 
-import { addTodo } from '../../../store/todo';
+import { addTodo } from '../../../../store/Todo/todos';
 
 
 export const AddTodo: React.FC = () => {

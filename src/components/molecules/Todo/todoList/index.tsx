@@ -5,9 +5,9 @@
 import React from 'react';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { GetAllTodos, toggleTodo, Todo } from '../../../store/todo';
+import { GetAllTodos, toggleTodo, Todo } from '../../../../store/Todo/todos';
 
-import { TodoItem } from '../../atoms/todoItem'
+import { TodoItem } from '../../../atoms/Todo/todoItem'
 
 
 export const TodoList: React.FC = () => {
