@@ -27,6 +27,11 @@
     - molecules - member-list => dirふやす
     - atoms - button, memberItem => dir増やす(common, topic)
 
+- 表示する情報
+  - login => user_name
+  - id => github_id
+  - avatar_id => image_url
+
 - thunk, sagaに取り掛かる前にdirの整理、必要なcomponentの整理をコミットしとく
   - action, reducer周りは後から整理
 

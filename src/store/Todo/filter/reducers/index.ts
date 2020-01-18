@@ -18,8 +18,6 @@ const FilterReducer: Reducer<FilterState, FilterActions> = (
   action: FilterActions
 ): FilterState => {
 
-  console.log('filterReducer')
-
   switch (action.type) {
     case SET_VISIBILITY_FILTER:
 

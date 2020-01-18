@@ -6,22 +6,17 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 
 import { Button } from '../../../atoms/Common/button';
-// import { Input } from '../../atoms/input'
-
 import { addTodo } from '../../../../store/Todo/todos';
 
 
 export const AddTodo: React.FC = () => {
-
   const dispatch = useDispatch();
-  let inputText = React.createRef<HTMLInputElement>();
-
-  // TODO：inputにrefを置いてやればアクセスできるぽい？
+  const inputText = React.createRef<HTMLInputElement>();
+  // TODO:form処理のBP
 
   return (
     <>
-      {/* refの仕様上inputは引っ張ってこれない？のでimportでなくここで書いてく */}
-      {/* <Input label={'test'} /> */}
+      {/* TODO:本当はここじゃなくてatomsからInput持ってきたい(refでエラー) */}
       <input type='text' name='addtodo' ref={inputText} />
       <Button label={'Add'} onClick={() => dispatch(addTodo(inputText.current!.value))} />
     </>
